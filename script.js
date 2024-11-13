@@ -1,6 +1,7 @@
 let text = "";
 
-document.getElementById('Indicator').style.backgroundColor = "yellow";
+document.getElementById('indicator').style.backgroundColor = "yellow";
+console.log("Start");
 
 const options = {
    username: 'Daniel_Braun',  
@@ -13,7 +14,7 @@ const client = mqtt.connect('wss://xfa25392.ala.eu-central-1.emqxsl.com:8084/mqt
 
 client.on('connect', () => {
    console.log('Mit dem MQTT-Broker verbunden');
-   document.getElementById('Indicator').style.backgroundColor = "green";
+   document.getElementById('indicator').style.backgroundColor = "green";
 });
 
 function sendMessage() {
