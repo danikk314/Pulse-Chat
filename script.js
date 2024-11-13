@@ -18,6 +18,8 @@ client.on('connect', () => {
 });
 
 function sendMessage() {
-   text = document.getElementById('intext').value; 
+   text = document.getElementById('intext').value;
    document.getElementById('intext').value = "";
+   client.publish('msg1', text); 
+   console.log('Nachricht gesendet:', text);
 }
