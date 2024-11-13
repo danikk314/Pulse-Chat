@@ -18,7 +18,7 @@ body, html {
     margin-top: 10px; /* Abstand zum oberen Rand */
     margin-bottom: 10px; /* Abstand zum unteren Rand */
 }
-#input {
+#intext {
     position: relative;
     width: 100%;
     height: 5px;
