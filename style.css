@@ -29,7 +29,13 @@ body, html {
     color: white;
 }
 p {
+    color: azure;
     flex: 1;
     margin: 0;
     padding: 0;    
+}
+#indicator {
+    width: 10px;
+    height: 10px;
+    position: relative;
 }
