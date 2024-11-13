@@ -1,7 +1,17 @@
-#main-container {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    background-color: lightsteelblue;
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#main-container {
+    width: 375px; /* Breite eines typischen Handys */
+    height: 667px; /* Höhe eines typischen Handys */
+    background-color: #333; /* Beispielhintergrundfarbe */
+    border-radius: 20px; /* Abgerundete Ecken wie ein Handy */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Schatten für mehr Realismus */
+    margin-top: 10px; /* Abstand zum oberen Rand */
+    margin-bottom: 10px; /* Abstand zum unteren Rand */
 }
