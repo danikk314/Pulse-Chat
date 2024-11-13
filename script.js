@@ -17,6 +17,17 @@ client.on('connect', () => {
    document.getElementById('indicator').style.backgroundColor = "green";
 });
 
+client.on('error', (error) => {
+   console.error('Verbindungsfehler:', error);
+   document.getElementById('indicator').style.backgroundColor = "red";
+});
+
+client.on('disconnect', () => {
+   console.log('Vom Broker getrennt');
+   document.getElementById('indicator').style.backgroundColor = "red";
+});
+
+
 function sendMessage() {
    text = document.getElementById('intext').value;
    document.getElementById('intext').value = "";
