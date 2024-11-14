@@ -24,7 +24,6 @@ client.on('connect', () => {
          console.log('Erfolgreich abonniert auf Topic: msg1');
       }
    });
-});
 
 client.on('error', (error) => {
    console.error('Verbindungsfehler:', error);
