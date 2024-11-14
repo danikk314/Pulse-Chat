@@ -10,8 +10,8 @@ body, html {
 #main-container {
     display: flex;
     flex-direction: column-reverse;
-    width: 375px; /* Handybreite */
-    height: 667px; /* Handyhöhe */
+    width: 48vh; /* Handybreite */
+    height: 85vh; /* Handyhöhe */
     background-color: #333; /* Hintergrundfarbe */
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
