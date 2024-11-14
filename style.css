@@ -4,29 +4,55 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f0f0f0;
 }
 
 #main-container {
     display: flex;
     flex-direction: column-reverse;
+    width: 375px; /* Handybreite */
+    height: 667px; /* Handyhöhe */
+    background-color: #333; /* Hintergrundfarbe */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px; /* Abstand zum Rand für Nachrichten */
+    overflow-y: auto; /* Scrollen bei Überlauf */
+}
 
-    width: 375px; /* Breite eines typischen Handys */
-    height: 667px; /* Höhe eines typischen Handys */
-    background-color: #333; /* Beispielhintergrundfarbe */
-    border-radius: 20px; /* Abgerundete Ecken wie ein Handy */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Schatten für mehr Realismus */
-    margin-top: 10px; /* Abstand zum oberen Rand */
-    margin-bottom: 10px; /* Abstand zum unteren Rand */
-}
 p {
-    color: azure;
-    flex: 1;
-    margin: 0;
-    padding: 0;    
+    color: #333; /* Textfarbe */
+    background-color: #e0e0e0; /* Hintergrundfarbe für Nachrichten */
+    margin: 5px 0; /* Abstand zwischen Nachrichten */
+    padding: 10px; /* Abstand innerhalb der Nachricht */
+    border-radius: 15px; /* Abgerundete Ecken für Nachrichten */
+    max-width: 80%; /* Breite der Nachricht, um das Layout wie im Chat zu gestalten */
+    word-wrap: break-word; /* Zeilenumbruch für lange Nachrichten */
+    display: inline-block; /* Größe passt sich dem Text an */
 }
+
 #indicator {
     width: 10px;
     height: 10px;
     position: relative;
     background-color: red;
+    margin-bottom: 10px;
+}
+#container {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+#name {
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+    margin: 5px;
+}
+#intext {
+    border-radius: 1cm;
 }
